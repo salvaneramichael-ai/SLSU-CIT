@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Council - College of Industrial Technology</title>
+  <link rel="stylesheet" href="council.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="CIT.png">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="CIT.png" alt="SLSU Logo">
+      <h1>College of Industrial Technology</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="text.html">Home</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero" id="orgchart">
+    <div class="org-chart">
+      <div class="level adviser">
+        <div class="person">
+          <img src="Macariola.JPG" alt="Dean">
+          <h3>Christian Edward B. Macariola</h3>
+          <p>adviser</p>
+        </div>
+        <div class="person">
+          <img src="rosa.JPG" alt="Dean">
+          <h3>Giles Dela Rosa</h3>
+          <p>Co-Adiser</p>
+        </div>
+      </div>
+    
+      <h2>Student Council</h2>
+      
+      <div class="level governor">
+        <div class="person">
+          <img src="derilo.jpg" alt="Dean">
+          <h3>Hace Caryl A. Derilo</h3>
+          <p>governor</p>
+        </div>
+      </div>
+
+      <div class="level vice-governor">
+        <div class="person">
+          <img src="nathaniel.jpg" alt="Dean">
+          <h3>Nathaniel Perez</h3>
+          <p>Vice governor</p>
+        </div>
+      </div>
+
+      <div class="level secretaries">
+        <div class="person">
+          <img src="Sicat.jpg" alt="Dean">  
+          <h3>Jose Emmanuel A. Sicat</h3>
+          <p>Executive Secretary</p>
+        </div>
+        <div class="person">
+         <img src="barnuevo.jpg" alt="Dean">    
+          <h3>James Marc T. Barnuevo</h3>
+          <p>Secretary</p>
+        </div>
+        <div class="person">
+          <img src="rosende.jpg" alt="Dean">   
+          <h3>Trisha May R. Rosende</h3>
+          <p>Assistant Secretary</p>
+        </div>
+      </div>
+
+      <div class="level finance">
+        <div class="person">
+         <img src="joyce.jpg" alt="Dean">    
+          <h3>Joyce Ann Garcia</h3>
+          <p>Treasurer</p>
+        </div>
+        <div class="person">
+         <img src="morine.jpg" alt="Dean">    
+          <h3>Morine Andrea P. Ruiz</h3>
+          <p>Auditor</p>
+        </div>
+      </div>
+
+       <h2>Councilors</h2>
+
+      <div class="level councilors">
+        <div class="person"><img src="dirk.jpg" alt="Dean"><h3>Dirk John Steven Callos</h3><p>Councilor (LEGMA)</p></div>
+        <div class="person"><img src="sofiah.jpg" alt="Dean"><h3>Sofiah Illyzah Marquez</h3><p>Councilor (EDRES)</p></div>
+        <div class="person"><img src="manansala.png" alt="Dean"><h3>John Francis Manansala</h3><p>Councilor (STRAW)</p></div>
+        <div class="person"><img src="barranda.jpg" alt="Dean"><h3>Nikkisha Bryce Barranda</h3><p>Councilor (CI)</p></div>
+        <div class="person"><img src="empensanado.png" alt="Dean"><h3>Millen Lorenz B. Empensando</h3><p>Councilor (GAD)</p></div>
+        <div class="person"><img src="rey.png" alt="Dean"><h3>Rey Aldwin Lagdameo</h3><p>Councilor (SPORTS)</p></div>
+        <div class="person"><img src="amora.jpg" alt="Dean"><h3>Fenicia Maxene Amora</h3><p>Councilor (CA)</p></div>
+        <div class="person"><img src="salayo.jpg" alt="Dean"><h3>Jheniffer N. Salayo</h3><p>Councilor (SANO)</p></div>
+        <div class="person"><img src="zaide.jpg" alt="Dean"><h3>Reyson Zaide</h3><p>Councilor (CESL)</p></div>
+      </div>
+
+       <h2>Representatives</h2>
+
+      <div class="level representatives">
+        <div class="person"><img src="stephen.png" alt="Dean"><h3>Stephen Gabriel P. Dinglasan</h3><p>Automotive Technology Representative</p></div>
+        <div class="person"><img src="shan.jpg" alt="Dean"><h3>Shan Keil S. Vargas</h3><p>Apparel and Fashion Technology Representative</p></div>
+        <div class="person"><img src="nicole.png" alt="Dean"><h3>John Nicole R. Cortez</h3><p>Computer Technology Representative</p></div>
+        <div class="person"><img src="agatha.png" alt="Dean"><h3>Agatha Moira R. Camaligan</h3><p>Culinary Technology Representative</p></div>
+        <div class="person"><img src="niel.png" alt="Dean"><h3>Neil E. Siores</h3><p>Electrical Technology Representative</p></div>
+        <div class="person"><img src="keith.jpg" alt="Dean"><h3>Keith Earl Vincent M. Alan</h3><p>Electronics Technology Representative</p></div>
+        <div class="person"><img src="kassery.png" alt="Dean"><h3>Kassery R. Franco</h3><p>Print Media Technology Representative</p></div>
+        <div class="person"><img src="unknown.webp" alt="Dean"><h3>Niel Edcel L. Razo</h3><p>Mechanical Technology Representative</p></div>
+        <div class="person"><img src="unknown.webp" alt="Dean"><h3>Naomi Kate E. Rosa</h3><p>Information Technology Representative</p></div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 College of Industrial Technology | All Rights Reserved</p>
+  </footer>
+
+  <script>
+    // Section fade-in effect
+    const sections = document.querySelectorAll('section');
+    const showOnScroll = () => {
+      const trigger = window.innerHeight * 0.85;
+      sections.forEach(sec => {
+        const top = sec.getBoundingClientRect().top;
+        if (top < trigger) sec.classList.add('visible');
+      });
+    };
+    window.addEventListener('scroll', showOnScroll);
+    showOnScroll();
+
+    // Header shadow on scroll
+    const header = document.querySelector('header');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) header.classList.add('scrolled');
+      else header.classList.remove('scrolled');
+    });
+  </script>
+</body>
+</html>

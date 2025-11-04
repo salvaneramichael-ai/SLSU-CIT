@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Faculty - College of Industrial Technology</title>
+   <link rel="stylesheet" href="org.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+   <link rel="icon" type="image/png" href="CIT.png">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="CIT.png" alt="SLSU Logo">
+      <h1>College of Industrial Technology</h1>
+      </div>
+    <nav>
+      <ul>
+        <li><a href="council.html">Council</a></li>
+        <li><a href="text.html">Home</a></li>
+      </ul>
+    </nav>
+    </div>
+  </header>
+
+  <section class=hero id="orgchart">
+    <h2>Organizational Chart</h2>
+
+    <div class="level dean">
+      <div class="person">
+        <img src="ricarlyn.jpg" alt="Dean">
+        <h3>Ricaryl Catherine P. Cruz, EdD</h3>
+        <p>Dean, College of Industrial Technology</p>
+      </div>
+    </div>
+
+    <div class="level heads">
+      <div class="person">
+        <img src="jerwin.jpg" alt="Head">
+        <h3>Engr. Jerwin D. Campita</h3>
+        <p>Department Head, BlndTech Mechanical Technology</p>
+      </div>
+
+      <div class="person">
+        <img src="angelito.jpg" alt="Head">
+        <h3>Angelito L. Mangubat</h3>
+        <p>Program Chairperson, BlndTech Automotive Technology</p>
+      </div>
+    </div>
+
+    <div class="level teachers">
+      <div class="person">
+        <img src="reynaldo.jpg" alt="Teacher">
+        <h3>Reynaldo V. Danganan</h3>
+        <p>Program Chairperson, BlndTech Computer Technology</p>
+      </div>
+
+      <div class="person">
+        <img src="edsel.jpg" alt="Teacher">
+        <h3>Edsel P. Paroan	</h3>
+        <p>Program Chairperson, BlndTech Electrical Technology</p>
+      </div>
+
+      <div class="person">
+        <img src="jose.jpg" alt="Teacher">
+        <h3>Jose D. Sanvictores</h3>
+        <p>Program Chairperson, BlndTech Electronics Technology</p>
+      </div>
+
+      <div class="level teachers">
+      <div class="person">
+        <img src="aurita.jpg" alt="Teacher">
+        <h3>Aurita A. Laguador</h3>
+        <p>Program Chairperson, BlndTech Culinary Technology</p>
+      </div>
+
+      <div class="person">
+        <img src="maricel.jpg" alt="Teacher">
+        <h3>Maricel O. Lingatong</h3>
+        <p>Program Chairperson, BlndTech Apparel and Fashion Technology
+</p>
+      </div>
+
+      <div class="person">
+        <img src="lendel.jpg" alt="Teacher">
+        <h3>Lendel D. Racelis</h3>
+        <p>Program Chairperson, BlndTech Print Media Technology</p>
+      </div>
+
+      <div class="person">
+        <img src="devie.jpg" alt="Teacher">
+        <h3>Devie S. Bello</h3>
+        <p>Program Chairperson, BS Information Technology</p>
+      </div>
+    </div>
+  </section>
+  
+  
+ 
+
+  <footer>
+    <p>&copy; 2025 College of Industrial Technology | All Rights Reserved</p>
+  </footer>
+   <script>
+  // Section fade-in effect
+  const sections = document.querySelectorAll('section');
+  const showOnScroll = () => {
+    const trigger = window.innerHeight * 0.85;
+    sections.forEach(sec => {
+      const top = sec.getBoundingClientRect().top;
+      if (top < trigger) sec.classList.add('visible');
+    });
+  };
+  window.addEventListener('scroll', showOnScroll);
+  showOnScroll();
+</script>
+<script>
+  // Add shadow to header on scroll
+  const header = document.querySelector("header");
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 50) {
+      header.classList.add("scrolled");
+    } else {
+      header.classList.remove("scrolled");
+    }
+  });
+</script>
+</body>
+</html>

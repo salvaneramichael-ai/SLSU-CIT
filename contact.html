@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | College of Industrial Technology</title>
+  <link rel="stylesheet" href="contact.css">
+  <link rel="icon" type="image/png" href="CIT.png">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <img src="CIT.png" alt="SLSU Logo">
+      <h1>College of Industrial Technology</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="text.html">Home</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contact Section -->
+  <section class="hero" id="contact">
+    <h2>Contact Information</h2>
+    <p>If you have any inquiries, feel free to reach out using the details below.</p>
+
+    <div class="contact-info">
+      <div class="info-box">
+  <h3>Contact Details</h3>
+  <p>Office Hours: Monday – Friday, 8:00 AM – 5:00 PM</p>
+  <p>Email: <a href="https://www.slsu.edu.ph/">slsu@gmail.com</a></p>
+    Facebook: 
+    <a href="https://www.facebook.com/share/1CY7EJS5TC/" target="_blank" rel="noopener noreferrer">
+      Visit our Facebook Page
+    </a>
+  </p>
+</div>
+
+    </div>
+  </section>
+
+  <!-- Map Section -->
+  <section>
+    <div class="map-container">
+      <h3>Find Us on the Map</h3>
+      <iframe
+        src="https://www.google.com/maps?q=Southern+Luzon+State+University,+Lucban,+Quezon,+Philippines&output=embed"
+        width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy">
+      </iframe>
+    </div>
+  </section>
+
+  <!-- Announcement Section -->
+  <section class="announcement">
+    <h2>📢 Announcements</h2>
+    <div class="announcement-box">
+      <marquee behavior="scroll" direction="left" scrollamount="6">
+        Enrollment for the 2nd Semester SY 2025–2026 starts on November 4! | 
+        CIT Week Celebration: November 15–20! | 
+        Internship Orientation for 3rd Year Students: October 25, 2025, 9 AM @ CIT Auditorium. si tj maasim
+      </marquee>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 College of Industrial Technology | All Rights Reserved</p>
+  </footer>
+   <script>
+  // Section fade-in effect
+  const sections = document.querySelectorAll('section');
+  const showOnScroll = () => {
+    const trigger = window.innerHeight * 0.85;
+    sections.forEach(sec => {
+      const top = sec.getBoundingClientRect().top;
+      if (top < trigger) sec.classList.add('visible');
+    });
+  };
+  window.addEventListener('scroll', showOnScroll);
+  showOnScroll();
+</script>
+<script>
+  // Add shadow to header on scroll
+  const header = document.querySelector("header");
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 50) {
+      header.classList.add("scrolled");
+    } else {
+      header.classList.remove("scrolled");
+    }
+  });
+</script>
+</body>
+</html>

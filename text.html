@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>College of Industrial Technology</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="CIT.png">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="logo">
+      <img src="CIT.png" alt="SLSU Logo">
+      <h1>College of Industrial Technology</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="council.html">Council</a></li>
+        <li><a href="org.html">Faculty</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Banner -->
+  <section class="hero" id="Home">
+    <h2>Excellence, Service, and Leadership</h2>
+    <p>Welcome to the College of Industrial Technology — nurturing globally competitive professionals.</p>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="About">
+    <h2>About Us</h2>
+    <p>
+      The College of Industrial Technology (CIT) is committed to providing quality education, fostering research,
+      and developing professionals who are leaders in their fields. We pride ourselves in shaping future innovators
+      with strong values and skills for nation-building.
+    </p>
+  </section>
+
+  <!-- Vision, Mission, Goals, and Objectives Section -->
+  <section class="vmgo" id="VMGO" aria-labelledby="vmgo-heading">
+      <!-- Vision -->
+      <div class="vmgo-item" aria-labelledby="vision-heading">
+        <h3 id="vision-heading">Vision</h3>
+        <p>
+          We aspire to be a leading innovative, high-performing college that develops technologically proficient graduates.
+        </p>
+      </div>
+
+      <!-- Mission -->
+      <div class="vmgo-item" aria-labelledby="mission-heading">
+        <h3 id="mission-heading">Mission</h3>
+        <p>
+          Contribute in the skills development of the Filipino workers innovatively proficient, productive, and versatile in all aspects of technology evolution. Transform students with competence essentials for technological advancement.
+        </p>
+      </div>
+
+      <!-- Goals and Objectives -->
+      <div class="vmgo-item" aria-labelledby="goals-heading">
+        <h3 id="goals-heading">Goals and Objectives</h3>
+        <ol>
+          <li>Develop qualified students to be effective instruments of inquiry and research with a sense of responsibility and commitment for the improvement of the human condition physical, mental, and spiritual domains.</li>
+          <li>Stimulate and maintain functional and productive activities in various disciplines.</li>
+          <li>Acquire skills and leadership competence in various disciplines to accelerate community progress as trained professionals in government and non-government agencies.</li>
+          <li>Adapt skills and internalize intellectual integrity, moral, cultural, and aesthetic values exemplifying ethical norms and professionalism.</li>
+        </ol>
+      </div>
+  </section>
+
+  <!-- Back to Top Button -->
+  <button id="backToTop" title="Go to top">↑</button>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-about">
+        <h3>College of Industrial Technology</h3>
+        <p>Empowering students through innovation, leadership, and excellence in industrial technology.</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="council.html">Council</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="org.html">Faculty</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-learn">
+        <h4>Learn More</h4>
+        <p>For more details</p>
+        <a href="contact.html" class="footer-btn">Contact us</a>
+      </div>
+    </div>
+    <p class="footer-bottom">&copy; 2025 College of Industrial Technology | All Rights Reserved</p>
+  </footer>
+
+  <!-- Script for Back to Top Button -->
+  <script>
+    const backToTopBtn = document.getElementById('backToTop');
+    window.onscroll = function() {
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        backToTopBtn.style.display = "block";
+      } else {
+        backToTopBtn.style.display = "none";
+      }
+    };
+    backToTopBtn.onclick = function() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+  </script>
+  <script>
+  // Section fade-in effect
+  const sections = document.querySelectorAll('section');
+  const showOnScroll = () => {
+    const trigger = window.innerHeight * 0.85;
+    sections.forEach(sec => {
+      const top = sec.getBoundingClientRect().top;
+      if (top < trigger) sec.classList.add('visible');
+    });
+  };
+  window.addEventListener('scroll', showOnScroll);
+  showOnScroll();
+</script>
+<script>
+  // Add shadow to header on scroll
+  const header = document.querySelector("header");
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 50) {
+      header.classList.add("scrolled");
+    } else {
+      header.classList.remove("scrolled");
+    }
+  });
+</script>
+
+</body>
+</html>

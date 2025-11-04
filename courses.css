@@ -1,0 +1,425 @@
+/* Courses Page Styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.5rem;
+}   
+
+body {
+  color: #fff;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background: #000b3a;
+  color: #ffffff;
+  padding: 15px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+}
+
+header .logo img {
+  height: 90px;
+  margin-right: 10px;
+}
+
+header h1 {
+  font-size: 2rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Courses Section */
+.hero {
+  text-align: center;
+  background: url("cit\ blg.png") no-repeat center center/cover;
+  color: #ffffff;
+  padding: 100px 20px;
+}
+
+.courses {
+  text-align: center;
+  color: #000b3a;
+  padding: 100px 20px;
+}
+
+.courses h2 {
+  font-size: 3rem;
+  margin-bottom: 40px;
+}
+
+.course-list {
+  display: grid;
+ grid-template-columns: repeat(3, 1fr); /* Always 3 columns */
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.course {
+  background: #01092077;
+  padding: 30px;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.course:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background: #000B3A;
+  color: #ffffff;
+  padding: 15px;
+}
+/* FACULTY TABLE DESIGN */
+.faculty-container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 40px auto;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.faculty-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.faculty-table thead {
+  background-color: #004aad;
+  color: white;
+}
+
+.faculty-table th, .faculty-table td {
+  padding: 15px 20px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  vertical-align: top;
+}
+
+.faculty-table tbody tr:hover {
+  background-color: #f3f7ff;
+  transition: background-color 0.3s ease;
+}
+
+.faculty-table th {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.faculty-table td {
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.faculty-table strong {
+  color: #004aad;
+}
+/* College Official Section */
+.college-official {
+  width: 90%;
+  max-width: 700px;
+  margin: 40px auto 60px;
+  background: #f9fbff;
+  border-left: 6px solid #004aad;
+  border-radius: 8px;
+  padding: 25px 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.college-official h3 {
+  color: #004aad;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.college-official p {
+  color: #222;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.college-official strong {
+  font-size: 1.1rem;
+  color: #003070;
+}
+/* === Courses Section === */
+
+.hero h2 {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.course-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.course {
+  display: block;
+  background-color: #fff;
+  color: #000;
+  font-weight: bold;
+  text-align: center;
+  padding: 30px;
+  margin: 15px;
+  border-radius: 15px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.course:hover {
+  background-color: #007BFF;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #000B3A;
+  color: white;
+  font-size: 0.9em;
+}
+
+/* === Announcements Section === */
+.announcements {
+  background: #f4f6ff;
+  color: #000b3a;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.announcements h2 {
+  font-size: 3rem;
+  margin-bottom: 40px;
+  color: #04115c;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.announcement-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.announcement {
+  background: #ffffff;
+  color: #000b3a;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  width: 320px;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.announcement:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.announcement h3 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  color: #04115c;
+}
+
+.announcement p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+/* === Footer Upgrade === */
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: left;
+  gap: 40px;
+  margin-bottom: 20px;
+}
+
+.footer-container h3, 
+.footer-container h4 {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.footer-container p, 
+.footer-container a {
+  color: #d6d6d6;
+  font-size: 1.3rem;
+  line-height: 1.6;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 8px;
+}
+
+.footer-links ul li a {
+  text-decoration: none;
+  color: #d6d6d6;
+  transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+  color: #ffffff;
+}
+
+.footer-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: #2749a7;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.footer-btn:hover {
+  background: #1c2f6e;
+  transform: translateY(-3px);
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 15px;
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+/* === Section Animation === */
+section {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.7s ease-out;
+}
+
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* === JS Trigger for Animations === */
+/* === Header Enhancements === */
+
+/* Logo subtle hover glow */
+header .logo img {
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+header .logo img:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 8px rgba(39, 73, 167, 0.6));
+}
+
+/* Nav links animated underline effect */
+nav ul li a {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 4px;
+  transition: color 0.3s ease;
+}
+
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background: #ffffff;
+  transition: width 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #a3c2ff;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+/* Header shadow when scrolling */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  transition: box-shadow 0.3s ease, background 0.3s ease;
+}
+
+header.scrolled {
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  background: #001252;
+}
+
+/* Smooth entry animation for header */
+header {
+  opacity: 0;
+  transform: translateY(-40px);
+  animation: slideDown 0.7s ease forwards;
+}
+
+@keyframes slideDown {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

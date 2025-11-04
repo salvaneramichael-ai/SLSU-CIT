@@ -1,0 +1,82 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background: url('cit\ blg.png') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  color: #222;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 40px;
+  color: white;
+}
+
+header h1 {
+  background-color: #000B3A;
+  display: inline-block;
+  padding: 25px 50px;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* Course info layout */
+.course-info {
+  max-width: 1000px;
+  margin: 60px auto;
+  background: rgba(255,255,255,0.95);
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 40px;
+  font-size: 1.5em;
+
+}
+
+.course-image {
+  width: 400px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.details {
+  flex: 1;
+}
+
+.details h2 {
+  color: #007bff;
+}
+
+/* Back button */
+.back-btn {
+  display: block;
+  text-align: center;
+  margin: 50px auto;
+  padding: 20px 40px;
+  background-color: #000B3A;
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+  width: 200px;
+  transition: 0.3s;
+}
+
+.back-btn:hover {
+  background-color: #000B3A;
+}
+
+/* Responsive */
+@media (max-width: 800px) {
+  .course-info {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .course-image {
+    width: 100%;
+  }
+}
